@@ -31,8 +31,11 @@ export default function Calculator() {
   return (
     <>
       <div className={styles .calculator}>
+        <div>
+        <div className={styles .input}>
       <Input value={text} />
-      <div>
+        </div>
+      <div className={styles .button}>
         <Button value={"C"} onClick={setReset}>
           C
         </Button>
@@ -56,6 +59,7 @@ export default function Calculator() {
         <Button value={"="} onClick={setResult}>
           =
         </Button>
+      </div>
       </div>
       </div>
     </>
