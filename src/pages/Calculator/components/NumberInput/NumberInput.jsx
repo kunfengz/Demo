@@ -1,8 +1,8 @@
 import { useState } from "react";
 import useNumber from "./useNumber";
 
-export default function NumberInput(){
-    const [num,setNum]=useNumber()
+export default function NumberInput(props){
+    const {num,setNum}=props
 
     function handleNum(e){
         const {value}=e.target
